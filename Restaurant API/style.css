@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.app {
+    width: 100%;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    width: 100%;
+    letter-spacing: 0.25em;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+}
+
+header img {
+    width: 250px;
+    box-shadow: 5px 5px 10px #00000054;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search input {
+    min-width: 100px;
+    min-height: 25px;
+    padding: 5px;
+    border: 1px solid black;
+    border-right: 0px;
+}
+
+.search i {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.sort {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sort {
+    max-width: 100px;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    min-width: 600px;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px solid #ffcc00;
+    box-shadow: 5px 5px 10px #00000054;
+}
+
+.container div b {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.container div mark {
+    background-color: #ffcc00;;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3px 0;
+}
+
+.container div div {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.container div em {
+    color: #ffcc00;
+    padding-left: 2px;
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        display: block;
+    }
+
+}
